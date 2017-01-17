@@ -1,6 +1,6 @@
 # Super class / base class
 class Animal:
-	def __init__(self, name, endangered=False, animal_class, no_of_legs, feeding_habit):
+	def __init__(self, name, animal_class, no_of_legs, feeding_habit, endangered=False):
 		self.name = name
 		self.animal_class = animal_class
 		self.no_of_legs = no_of_legs
@@ -10,29 +10,29 @@ class Animal:
 	def setEndangered(self,state):
 		self.endangered = state
 
-	def getEndangered():
+	def isEndangered(self):
 		return self.endangered
 
-	def setName(name):
+	def setName(self, name):
 		self.name = name
 
-	def getName():
+	def getName(self):
 		return self.name
 
-	def setAnimalClass(animal_class):
+	def setAnimalClass(self, animal_class):
 		self.animal_class = animal_class
 
-	def getAnimalClass(animal_class):
+	def getAnimalClass(self):
 		return self.animal_class
 
-	def setNoOfLegs(no_of_legs):
+	def setNoOfLegs(self, no_of_legs):
 		self.no_of_legs = no_of_legs
 
-	def getNoOfLegs(no_of_legs):
+	def getNoOfLegs(self):
 		return self.no_of_legs
 
-	def setFeedingHabit(feeding_habit):
+	def setFeedingHabit(self, feeding_habit):
 		self.feeding_habit = feeding_habit
 
-	def getFeedingHabit(feeding_habit):
+	def getFeedingHabit(self):
 		return self.feeding_habit
