@@ -31,3 +31,8 @@ This is done in order to prevent sensitive data from being accessed by outer cla
 
 For example, in  the `Animal` class, the `name` and `animal_class` attributes are private attributes and can only be accessed by the `Animal` class, but not by its subclass `Elephant`. 
 The method `testEncapsulation()` has been used to demonstrate this.
+
+## Polymorphism
+This is achieved when a Subclass overrides the attributes of the Base class when an instance is created. 
+The method `showPolymorphism()` demonstrates this behaviour
+
