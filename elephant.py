@@ -43,8 +43,13 @@ class Elephant(Animal):
 			 self.getNoOfLegs(), self.isEndangered(), self.given_name, self.type, self.has_tusks,
 			 self.age, self.location))
 
+	def testEncapsulation(self):
+		print("Testing Encapsulation...")
+		return("The name of this animal is: %s" % self.__name)
+
 
 
 if __name__ == '__main__':
 	elephant = Elephant("Tatu", "African", 50, "Maasai Mara", True)
 	print(elephant.describeElephant())
+	print(elephant.testEncapsulation())
